@@ -1,0 +1,62 @@
+@charset "UTF-8"; 
+body {   
+    background-color: rgb(115, 165, 236);
+    font: normal 15pt Arial;
+}  
+header {
+    color: white;
+    text-align: center;
+} 
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 95%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+div.form {
+    background-color: rgb(197, 233, 238);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);
+}
+div#percent p {
+    text-align: center;
+    margin-top: 50px;
+}
+div.form p.comi {
+    text-align: center;
+}
+#icol {
+    width: 100px;
+}
+#icliente, #icol, #isev {
+    height: 20px;
+    margin-right: 95px; 
+    border-radius: 7px;
+}
+#idin, #ipix, #ideb, #icred {
+    width: 70px; 
+    height: 20px;
+    border-radius: 7px;
+}
+#idin, #ipix, #idebito, #icredito {
+    margin-right: 95px;
+}
+
+#idebito, #icredito {
+    width: 70px;
+    height: 25px;
+    border-radius: 7px;
+}
+input#icom {
+    width: 40px; 
+    border-radius: 7px;
+}
+footer {
+    color: white;    
+    font-size: 10pt;
+    font-style: italic;
+}

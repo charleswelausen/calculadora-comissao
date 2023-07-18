@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Comissões</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculo de Comissões</h1>
+    </header>
+    <section> 
+        <div>
+            <form method="post" autocomplete="on">
+                <div class="form">
+                    <p>
+                        <label for="icliente">Cliente:</label>
+                        <input type="text" name="cliente" id="icliente">
+
+                        <label for="icol">Colaborador:</label>
+                        <input type="text" nome="col" id="icol" list="lstcol">
+                            <datalist id="lstcol">
+                                <option>Lekinha</option>
+                                <option>Preta</option>
+                                <option>Ana</option>
+                                <option>Fabi</option>
+                                <option>Mari</option>
+                                <option>Arianne</option>
+                                <option>Alessandra</option>
+                            </datalist>
+
+                            <label for="iserv">Serviço:</label>
+                            <textarea name="serv" id="iserv" cols="25" rows="2" placeholder="Digite o serviço"></textarea>
+                    </p>
+
+                    <p>
+                        
+                            <label for="idin">Dinheiro:</label>
+                                <input type="number" name="dinheiro" id="idin" step="0.1" placeholder="R$ 0,00" oninput="calcular()">
+
+                            <label for="ipix">Pix:</label>
+                                <input type="number" name="pix" id="ipix" step="0.1" placeholder="R$ 0,00" oninput="calcular()">
+
+
+                           
+                               <label for="ideb">Debito:</label>
+                                    <input type="number" name="debito" id="ideb" step="0.1" placeholder="R$ 0,00" oninput="calcular()">
+
+                                   <select name="debito" id="idebito" oninput="calcular()">
+                                    <option value=""selected>Cartão</option>
+                                        <option value="1.38">Visa</option>
+                                        <option value="1.38">Master</option>
+                                        <option value="2.58">Elo</option>
+                                    </select>
+
+                                <label for="icred">Crédito:</label>
+                                    <input type="number" name="credito" id="icred" step="0.1" placeholder="R$ 0,00" oninput="calcular()">
+
+                                    <select name="credito" id="icredito" oninput="calcular()">
+                                        <option value=""selected>Cartão</option>
+
+                                            <optgroup label="Visa">
+                                                <option value="3.16">1x</option>
+                                                <option value="5.40">2x</option>
+                                                <option value="6.13">3x</option>
+                                            </optgroup>
+                                                                   
+                                            <optgroup label="Master">
+                                                <option value="3.16">1x</option>
+                                                <option value="5.40">2x</option>
+                                                <option value="6.13">3x</option>
+                                            </optgroup>
+                                            
+                                            <optgroup label="Elo">
+                                                <option value="4.91">1x</option>
+                                                <option value="6.47">2x</option>
+                                                <option value="7.20">3x</option>
+                                            </optgroup>
+
+                                            <optgroup label="Hiper">
+                                                <option value="4.91">1x</option>
+                                                <option value="6.47">2x</option>
+                                                <option value="7.20">3x</option>
+                                            </optgroup>
+                                    </select>
+                          
+                    </p>
+
+                </div>
+            <div id="percent">
+                        <p>
+                            <label for="icom" id="perce">Percentual comissão colaborador:</label>
+                            <input type="text" nome="com" id="icom" list="lstcom" oninput="calcular()">
+                            <datalist id="lstcom">
+                                <option value="20"></option>
+                                <option value="30"></option>
+                                <option value="60"></option>
+                                <option value="70"></option>
+                                <option value="75"></option>
+                                <option value="85"></option>
+                                <option value="100"></option>
+                            </datalist>%
+                        </p>
+            </div>            
+                    <p>
+                         <input type="reset" value="Limpar">                   
+                    </p>  
+
+            <div class="form">
+                    <p class="comi">
+                        <label for="resultado">Comissão a pagar é: </label>
+                        <output name="res" id="resultado"></output>
+                    </p>
+            </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2022CharlesWelausen</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
