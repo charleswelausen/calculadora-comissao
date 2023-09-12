@@ -1,0 +1,1 @@
+Este é um projeto de calculo de comissões de colaboradores de um salão de beleza onde o valor da comissão  é um determinado percentual de acordo com o tipo de serviço, e também deve descontar as taxas de cartões de credito de acordo com cada modaledade de pagamento ou bandeira de cartão.
